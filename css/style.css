@@ -317,13 +317,3 @@ COLORS
 /*
 MOBILE RESIZING
 */
-@media (min-width: 400px){
-  .row div{
-    width: 95%;
-  }
-}
-@media (min-width: 850px){
-  .row div{
-    width: 80%;
-  }
-}
