@@ -1,0 +1,316 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  list-style-type: none;
+}
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+/*
+ANIMATION
+*/
+
+nav a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #566473;
+	content: '';
+	opacity: 0.1;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+nav a:hover::after,
+nav a:focus::after {
+	opacity: 0.6;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+nav a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #566473;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 5px;
+	text-decoration: none;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+/*
+PAGE
+*/
+
+.header-outer{
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  background: #FFFFFF; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#FFFFFF, #F5F5F5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#FFFFFF, #F5F5F5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#FFFFFF, #F5F5F5); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#FFFFFF, #F5F5F5); /* Standard syntax */
+}
+.header{
+  background: #F5F5F5;
+  min-height: 200px;
+}
+.row{
+  background: #F5F5F5;
+}
+.footer-outer{
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background: #FFFFFF; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#F5F5F5, #d9d9d9); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#F5F5F5, #d9d9d9); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#F5F5F5, #d9d9d9); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#F5F5F5, #d9d9d9); /* Standard syntax */
+}
+.footer{
+  background: #F5F5F5;
+  overflow: hidden;
+}
+
+/*
+HEADER
+*/
+
+.disp-bar{
+  background: none;
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 800px){
+  .disp-bar{
+    width: 700px;
+  }
+}
+@media (min-width: 1000px){
+  .disp-bar{
+    width: 900px;
+  }
+  nav a{
+    font-size: 21.600000381469727px;
+  }
+}
+@media (min-width: 1200px){
+  .disp-bar{
+    width: 1100px;
+  }
+}
+.disp-bar-left{
+  width: calc(50% - 75px);
+  min-height: 200px;
+  float: left;
+}
+.disp-bar-left nav{
+  width: 100%;
+  height: 40px;
+  margin-top: 60px;
+  float: right;
+}
+.disp-bar-left nav a:last-child{
+  width: auto;
+  padding: 5px;
+  margin-left: 0px;
+  display: inline-block;
+  float: right;
+  font-family: 'Raleway', sans-serif;
+}
+.disp-bar-left nav a{
+  width: auto;
+  padding: 5px;
+  margin-left: 20px;
+  display: inline-block;
+  float: right;
+  font-family: 'Raleway', sans-serif;
+}
+.disp-bar-mid{
+  width: 150px;
+  min-height: 150px;
+  float: left;
+}
+.disp-bar-icon-box{
+  margin: 40px;
+  min-height: 100px;
+  float: left;
+}
+.disp-bar-right{
+  width: calc(50% - 75px);
+  min-height: 200px;
+  float: left;
+}
+.disp-bar-right nav{
+  width: 100%;
+  height: 40px;
+  margin-top: 60px;
+  float: left;
+}
+.disp-bar-right nav a:first-child{
+  width: auto;
+  padding: 5px;
+  margin-left: 0px;
+  display: inline-block;
+  float: left;
+  font-family: 'Raleway', sans-serif;
+}
+.disp-bar-right nav a{
+  width: auto;
+  padding: 5px;
+  margin-left: 20px;
+  display: inline-block;
+  float: left;
+  font-family: 'Raleway', sans-serif;
+}
+@media (min-width: 1000px){
+  .disp-bar-mid{
+    width: 200px;
+    min-height: 200px;
+  }
+  .disp-bar-right{
+    width: calc(50% - 100px);
+  }
+  .disp-bar-left{
+    width: calc(50% - 100px);
+  }
+  .disp-bar-left nav{
+    margin-top: 80px;
+  }
+  .disp-bar-right nav{
+    margin-top: 80px;
+  }
+}
+@media (max-width: 800px){
+  nav a{
+    margin: 5px !important;
+    margin-bottom: 30px !important;
+  }
+  .disp-bar-left nav{
+    margin-top: 40px;
+  }
+  .disp-bar-right nav{
+    margin-top: 40px;
+  }
+}
+
+/*
+CONTENT
+*/
+
+.row div{
+  width: 100%;
+  min-height: 200px;
+  margin: auto;
+}
+.row .stand-alone{
+  border-radius: 15px;
+}
+@media (min-width: 800px){
+  .row div{
+    width: 700px;
+  }
+}
+@media (min-width: 1000px){
+  .row div{
+    width: 900px;
+  }
+}
+.row div h1{
+  margin-left: 10px;
+}
+.row div p{
+  padding-left: 20px;
+  padding-right: 21px;
+  margin: 20px 2px 0px 20px;
+  border-left: 1px solid #566473;
+}
+
+/*
+FOOTER
+*/
+
+.foot-bar{
+  background: none;
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 800px){
+  .foot-bar{
+    width: 700px;
+  }
+}
+@media (min-width: 1000px){
+  .foot-bar{
+    width: 900px;
+  }
+}
+.foot-bar-top{
+  width: 100%;
+  height: 200px;
+  float: left;
+  display: block;
+}
+.foot-bar-bot-left{
+  position: relative;
+  width: 50%;
+  height: 60px;
+  float: left;
+}
+.foot-bar-bot-left div{
+  position: absolute;
+  color: #566473;
+  left: 10px;
+  bottom: 10px;
+}
+.foot-bar-bot-right{
+  position: relative;
+  width: 50%;
+  height: 60px;
+  float: left;
+}
+
+/*
+COLORS
+*/
+
+.bc1{
+  background-color: #e6e6e6;
+}
+.bc2{
+  background-color: #cccccc;
+}
+.bc3{
+  background-color: #999999;
+}
+.bc4{
+  background-color: #737373;
+}
