@@ -109,23 +109,20 @@ HEADER
   width: 100%;
   margin: auto;
 }
-@media (max-resolution: 1dppx){
-    /* ... */
-
+@media (min-width: 800px){
   .disp-bar{
     width: 700px;
   }
 }
-@media (max-resolution: 1dppx){
+@media (min-width: 1000px){
   .disp-bar{
     width: 900px;
   }
   nav a{
     font-size: 21.600000381469727px;
-    color: red;
   }
 }
-@media (max-resolution: 1dppx){
+@media (min-width: 1200px){
   .disp-bar{
     width: 1100px;
   }
@@ -230,7 +227,6 @@ CONTENT
 */
 
 .row div{
-  width: 100%;
   min-height: 200px;
   margin: auto;
 }
@@ -316,4 +312,18 @@ COLORS
 }
 .bc4{
   background-color: #737373;
+}
+
+/*
+MOBILE RESIZING
+*/
+@media (max-width: 800px){
+  .row div{
+    width: 95%;
+  }
+}
+@media (max-width: 800px){
+  .foot-bar{
+    width: 700px;
+  }
 }
