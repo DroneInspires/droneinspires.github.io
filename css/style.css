@@ -317,13 +317,13 @@ COLORS
 /*
 MOBILE RESIZING
 */
-@media (max-width: 800px){
+@media (min-width: 400px){
   .row div{
     width: 95%;
   }
 }
-@media (max-width: 800px){
-  .foot-bar{
-    width: 700px;
+@media (min-width: 800px){
+  .row div{
+    width: 80%;
   }
 }
