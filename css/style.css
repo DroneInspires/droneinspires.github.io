@@ -109,20 +109,23 @@ HEADER
   width: 100%;
   margin: auto;
 }
-@media (min-width: 800px){
+@media (max-resolution: 1dppx){
+    /* ... */
+
   .disp-bar{
     width: 700px;
   }
 }
-@media (min-width: 1000px){
+@media (max-resolution: 1dppx){
   .disp-bar{
     width: 900px;
   }
   nav a{
     font-size: 21.600000381469727px;
+    color: red;
   }
 }
-@media (min-width: 1200px){
+@media (max-resolution: 1dppx){
   .disp-bar{
     width: 1100px;
   }
