@@ -322,7 +322,7 @@ MOBILE RESIZING
     width: 95%;
   }
 }
-@media (min-width: 800px){
+@media (min-width: 900px){
   .row div{
     width: 80%;
   }
