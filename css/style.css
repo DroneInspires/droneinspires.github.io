@@ -80,7 +80,6 @@ PAGE
 }
 .header{
   background: #F5F5F5;
-  min-height: 200px;
 }
 .row{
   background: #F5F5F5;
@@ -106,6 +105,7 @@ HEADER
 
 .disp-bar{
   background: none;
+  min-height: 200px;
   width: 100%;
   margin: auto;
 }
@@ -129,11 +129,9 @@ HEADER
 }
 .disp-bar-left{
   width: calc(50% - 75px);
-  min-height: 200px;
   float: left;
 }
 .disp-bar-left nav{
-  width: 100%;
   height: 40px;
   margin-top: 60px;
   float: right;
@@ -156,17 +154,14 @@ HEADER
 }
 .disp-bar-mid{
   width: 150px;
-  min-height: 150px;
   float: left;
 }
 .disp-bar-icon-box{
   margin: 40px;
-  min-height: 100px;
   float: left;
 }
 .disp-bar-right{
   width: calc(50% - 75px);
-  min-height: 200px;
   float: left;
 }
 .disp-bar-right nav{
@@ -194,7 +189,6 @@ HEADER
 @media (min-width: 1000px){
   .disp-bar-mid{
     width: 200px;
-    min-height: 200px;
   }
   .disp-bar-right{
     width: calc(50% - 100px);
@@ -211,14 +205,20 @@ HEADER
 }
 @media (max-width: 800px){
   nav a{
+    width: 100% !important;
     margin: 5px !important;
     margin-bottom: 30px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    text-align: center;
   }
   .disp-bar-left nav{
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .disp-bar-right nav{
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 
