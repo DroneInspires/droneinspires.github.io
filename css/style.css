@@ -227,6 +227,7 @@ CONTENT
 
 .row > div{
   min-height: 200px;
+  overflow: auto;
   margin: auto;
   width: 95%;
 }
@@ -255,6 +256,26 @@ CONTENT
 .row{
   z-index: 2;
 }
+
+/*
+SPACING
+*/
+
+.thirds {
+  float: left;
+  width: 100% !important;
+  margin-left: 0;
+}
+@media (min-width: 800px){
+  .thirds {
+    width: 31.6666% !important;
+    margin-left: 2.5%;
+  }
+  .thirds:first-child{
+    margin-left: 0;
+  }
+}
+
 /*
 FOOTER
 */
@@ -297,19 +318,6 @@ FOOTER
   width: 50%;
   height: 60px;
   float: left;
-}
-
-/*
-SPACING
-*/
-
-.thirds {
-  float: left;
-  width: 31.6666% !important;
-  margin-left: 2.5%;
-}
-.thirds:first-child{
-  margin-left: 0;
 }
 
 /*
