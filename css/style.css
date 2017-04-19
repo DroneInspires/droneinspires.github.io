@@ -252,7 +252,9 @@ CONTENT
   margin: 20px 2px 0px 20px;
   border-left: 1px solid #566473;
 }
-
+.row{
+  z-index: 2;
+}
 /*
 FOOTER
 */

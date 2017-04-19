@@ -403,8 +403,8 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Self Clearing Goodness */
-.container:after,
 .row:after,
+.are:after,
 .u-cf {
   content: "";
   display: table;
