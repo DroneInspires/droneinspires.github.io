@@ -229,10 +229,11 @@ CONTENT
 .row div{
   min-height: 200px;
   margin: auto;
+  width: 95%;
 }
 .row .stand-alone{
   border-radius: 15px;
-}/*
+}
 @media (min-width: 800px){
   .row div{
     width: 700px;
@@ -242,7 +243,7 @@ CONTENT
   .row div{
     width: 900px;
   }
-}*/
+}
 .row div h1{
   margin-left: 10px;
 }
