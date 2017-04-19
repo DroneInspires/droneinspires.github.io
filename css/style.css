@@ -131,12 +131,12 @@ HEADER
   width: calc(50% - 75px);
   float: left;
 }
-.disp-bar-left nav{
+.disp-bar-left > nav{
   height: 40px;
   margin-top: 60px;
   float: right;
 }
-.disp-bar-left nav a:last-child{
+.disp-bar-left > nav > a:last-child{
   width: auto;
   padding: 5px;
   margin-left: 0px;
@@ -144,7 +144,7 @@ HEADER
   float: right;
   font-family: 'Raleway', sans-serif;
 }
-.disp-bar-left nav a{
+.disp-bar-left > nav > a{
   width: auto;
   padding: 5px;
   margin-left: 20px;
@@ -164,12 +164,12 @@ HEADER
   width: calc(50% - 75px);
   float: left;
 }
-.disp-bar-right nav{
+.disp-bar-right > nav{
   height: 40px;
   margin-top: 60px;
   float: left;
 }
-.disp-bar-right nav a:first-child{
+.disp-bar-right > nav > a:first-child{
   width: auto;
   padding: 5px;
   margin-left: 0px;
@@ -177,7 +177,7 @@ HEADER
   float: left;
   font-family: 'Raleway', sans-serif;
 }
-.disp-bar-right nav a{
+.disp-bar-right > nav > a{
   width: auto;
   padding: 5px;
   margin-left: 20px;
@@ -195,10 +195,10 @@ HEADER
   .disp-bar-left{
     width: calc(50% - 100px);
   }
-  .disp-bar-left nav{
+  .disp-bar-left > nav{
     margin-top: 80px;
   }
-  .disp-bar-right nav{
+  .disp-bar-right > nav{
     margin-top: 80px;
   }
 }
@@ -213,10 +213,10 @@ HEADER
     margin-right: 0px !important;
     text-align: center;
   }
-  .disp-bar-left nav{
+  .disp-bar-left > nav{
     margin-top: 20px;
   }
-  .disp-bar-right nav{
+  .disp-bar-right > nav{
     margin-top: 20px;
   }
 }
@@ -225,7 +225,7 @@ HEADER
 CONTENT
 */
 
-.row div{
+.row > div{
   min-height: 200px;
   margin: auto;
   width: 95%;
@@ -234,19 +234,19 @@ CONTENT
   border-radius: 15px;
 }
 @media (min-width: 800px){
-  .row div{
+  .row > div{
     width: 700px;
   }
 }
 @media (min-width: 1000px){
-  .row div{
+  .row > div{
     width: 900px;
   }
 }
-.row div h1{
+.row > div h1{
   margin-left: 10px;
 }
-.row div p{
+.row > div p{
   padding-left: 20px;
   padding-right: 21px;
   margin: 20px 2px 0px 20px;
@@ -286,7 +286,7 @@ FOOTER
   height: 60px;
   float: left;
 }
-.foot-bar-bot-left div{
+.foot-bar-bot-left > div{
   position: absolute;
   color: #566473;
   left: 10px;
@@ -297,6 +297,19 @@ FOOTER
   width: 50%;
   height: 60px;
   float: left;
+}
+
+/*
+SPACING
+*/
+
+.thirds {
+  float: left;
+  width: 31.6666% !important;
+  margin-left: 2.5%;
+}
+.thirds:first-child{
+  margin-left: 0;
 }
 
 /*
